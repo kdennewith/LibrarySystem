@@ -1,14 +1,14 @@
 public class Book {
     private String title;
     private String author;
-    private int pulicationYear;
+    private int publicationYear;
     private String IsbnNumber;
     private String callNumber;
 
-    public Book(String title, String author, int pulicationYear, String isbnNumber, String callNumber) {
+    public Book(String title, String author, int publicationYear, String isbnNumber, String callNumber) {
         this.title = title;
         this.author = author;
-        this.pulicationYear = pulicationYear;
+        this.publicationYear = publicationYear;
         this.IsbnNumber = isbnNumber;
         this.callNumber = callNumber;
     }
@@ -31,11 +31,11 @@ public class Book {
     }
 
     public int getPulicationYear() {
-        return pulicationYear;
+        return publicationYear;
     }
 
     public void setPulicationYear(int pulicationYear) {
-        this.pulicationYear = pulicationYear;
+        this.publicationYear = pulicationYear;
     }
 
     public String getIsbnNumber() {
