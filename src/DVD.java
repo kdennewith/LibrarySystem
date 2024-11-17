@@ -1,13 +1,13 @@
-public class DVD extends Library{
+public class DVD extends LibraryItem{
     private String title;
     private int year;
     private String callNumber;
     private boolean checkedOut;
 
     public DVD(String title, int year, String callNumber) {
-        this.title = title;
+        super(title,callNumber);
         this.year = year;
-        this.callNumber = callNumber;
+
     }
 
     public String getTitle() {
@@ -40,5 +40,10 @@ public class DVD extends Library{
 
     public boolean getCheckedOut() {
         return checkedOut;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("DVD: " + getTitle() + " (Release Date: " + year + ")");
     }
 }

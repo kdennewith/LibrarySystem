@@ -1,9 +1,7 @@
-public class Book extends Library{
-    private String title;
+public class Book extends LibraryItem{
     private String author;
     private int publicationYear;
     private String IsbnNumber;
-    private String callNumber;
 
     /**
      * This constructor will be used for storing books. We search for books using the callNumber since all are unique,
@@ -15,20 +13,11 @@ public class Book extends Library{
      * @param callNumber Used to find books at certain locations in the library, found on spine it's an organization code.
      */
     public Book(String title, String author, int publicationYear, String isbnNumber, String callNumber) {
-        this.title = title;
+        super(title,callNumber);
         this.author = author;
         this.publicationYear = publicationYear;
         this.IsbnNumber = isbnNumber;
-        this.callNumber = callNumber;
-    }
 
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public String getAuthor() {
@@ -55,11 +44,8 @@ public class Book extends Library{
         IsbnNumber = isbnNumber;
     }
 
-    public String getCallNumber() {
-        return callNumber;
-    }
-
-    public void setCallNumber(String callNumber) {
-        this.callNumber = callNumber;
+    @Override
+    public void displayInfo() {
+        System.out.println("Book: " + getTitle() + "\n Author: " + author + "\n (ISBN: " + IsbnNumber + ")");
     }
 }
