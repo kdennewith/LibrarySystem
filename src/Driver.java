@@ -17,5 +17,7 @@ public class Driver {
         brooksLibrary.checkOutItem("DVD S1 c.2");
 
         brooksLibrary.searchByTitle("The Way Of Kings");
+
+        spiritedAway.isCheckedOut();
     }
 }

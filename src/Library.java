@@ -36,6 +36,16 @@ public class Library {
         System.out.println("Nothing with that title could be found.");
     }
 
+    public void searchByCallNumber(String callNumber) {
+        for (LibraryItem item : items) {
+            if (item.getCallNumber().equals(callNumber)) {
+                item.displayInfo();
+                return;
+            }
+        }
+        System.out.println("Nothing with that call number could be found.");
+    }
+
     /**
      * This method handles checking out an item from the library using the unique callNumber. Goes through the
      *  list of items and sets an item's checkOut status to true if the callNumber given is equal to a callNumber
