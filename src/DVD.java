@@ -1,4 +1,4 @@
-public class DVD {
+public class DVD extends Library{
     private String title;
     private int year;
     private String callNumber;
