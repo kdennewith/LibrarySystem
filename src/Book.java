@@ -30,12 +30,12 @@ public class Book {
         this.author = author;
     }
 
-    public int getPulicationYear() {
+    public int getPublicationYear() {
         return publicationYear;
     }
 
-    public void setPulicationYear(int pulicationYear) {
-        this.publicationYear = pulicationYear;
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
     }
 
     public String getIsbnNumber() {
