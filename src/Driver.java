@@ -10,14 +10,12 @@ public class Driver {
         brooksLibrary.addItem(spiritedAway);
         brooksLibrary.addItem(theWayOfKings);
 
-        brooksLibrary.searchByTitle("The Way Of Kings");
-        brooksLibrary.searchByTitle("Spirited Away");
 
         brooksLibrary.checkOutItem("BOOK T4 c.1");
         brooksLibrary.checkOutItem("DVD S1 c.2");
 
         brooksLibrary.searchByTitle("The Way Of Kings");
 
-        spiritedAway.isCheckedOut();
+        System.out.println(spiritedAway.isCheckedOut() + " Status of isCheckedOut for Spirited Away");
     }
 }

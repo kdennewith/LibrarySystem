@@ -1,23 +1,4 @@
 public class DVD extends LibraryItem{
-    private String title;
-    private int year;
-    private String callNumber;
-    private boolean checkedOut;
-
-    public DVD(String title, int year, String callNumber) {
-        super(title,callNumber);
-        this.year = year;
-
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public int getYear() {
         return year;
     }
@@ -26,20 +7,13 @@ public class DVD extends LibraryItem{
         this.year = year;
     }
 
-    public String getCallNumber() {
-        return callNumber;
-    }
+    private int year;
 
-    public void setCallNumber(String callNumber) {
-        this.callNumber = callNumber;
-    }
 
-    public void setCheckedOut(boolean checkedOut) {
-        this.checkedOut = checkedOut;
-    }
+    public DVD(String title, int year, String callNumber) {
+        super(title,callNumber);
+        this.year = year;
 
-    public boolean getCheckedOut() {
-        return checkedOut;
     }
 
     @Override
